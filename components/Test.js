@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
 import {
-  StatusBar,
-  StyleSheet,
   View,
-  Text
+  Text,
+  StyleSheet,
 } from 'react-native';
-import {Actions} from 'react-native-router-flux';
-import Router from './Router';
 
-export default class App extends Component<{}> {
-
+export default class MyComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Router />
+        <Text>Im the MyComponent component</Text>
       </View>
     );
   }
@@ -22,7 +18,5 @@ export default class App extends Component<{}> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
   },
-
 });
